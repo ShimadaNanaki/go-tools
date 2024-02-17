@@ -19,7 +19,7 @@ func FileCleaner() {
 	fmt.Print("Enter the directory path: ")
 	reader := bufio.NewReader(os.Stdin)
 	folder, _ = reader.ReadString('\n')
-	folder = strings.TrimSpace(folder) // Remove trailing newline
+	folder = strings.TrimSpace(folder)
 
 	files, err := ioutil.ReadDir(folder)
 	if err != nil {

@@ -25,7 +25,7 @@ func main() {
 	case "2":
 		modules.ExtDeleter()
 	case "3":
-		modules.NameRandomer()
+		modules.NameRandomizer()
 	case "0":
 		fmt.Println("Bye.")
 		return

@@ -11,10 +11,6 @@ import (
 	"time"
 )
 
-func clearTerminal() {
-	fmt.Print("\033[H\033[2J") // ANSIエスケープシーケンスを使用してターミナルをクリア
-}
-
 func randomString(length int) string {
 	rand.Seed(time.Now().UnixNano())
 	const charset = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -25,14 +21,14 @@ func randomString(length int) string {
 	return string(result)
 }
 
-func NameRandomer() {
-	clearTerminal()
+func NameRandomizer() {
+	ClearTerminal()
 	fmt.Println("[Name Randomer] This script will change the filenames to random strings.")
 	var directory string
 	fmt.Print("Enter the directory path: ")
 	reader := bufio.NewReader(os.Stdin)
 	directory, _ = reader.ReadString('\n')
-	directory = strings.TrimSpace(directory) // Remove trailing newline
+	directory = strings.TrimSpace(directory)
 
 	files, err := ioutil.ReadDir(directory)
 	if err != nil {
