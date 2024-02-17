@@ -1,4 +1,4 @@
-https://github.com/ShimadaNanaki/tools を頑張ってgoにしてみようのコーナー
+https://github.com/ShimadaNanaki/tools (priv) を頑張ってgoにしてみようのコーナー
 
 ### build
 ```
