@@ -11,7 +11,7 @@ func main() {
 	fmt.Println("please select a script to run:")
 	fmt.Println("1: cleaner")
 	fmt.Println("2: ext_deleter")
-	fmt.Println("3: name_randomer")
+	fmt.Println("3: name_randomizer")
 	fmt.Println("0: exit")
 	_, err := fmt.Scanln(&input)
 	if err != nil {
